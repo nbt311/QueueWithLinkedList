@@ -27,4 +27,13 @@ public class MyLinkedListQueue {
             this.tail = null;
         return temp;
     }
+
+    public void readList () {
+        Node temp = head;
+        while (temp != null) {
+            System.out.println(temp.key);
+            temp = temp.next;
+        }
+    }
+
 }
